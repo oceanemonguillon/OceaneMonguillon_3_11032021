@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": "ACAA,kJAAkJ;ACAlJ,wGAAwG;ACAxG,eAAe;AACf,OAAO,CAAC,mEAAI;AAGZ,OAAO,CAAC,sEAAI;AAIZ,gBAAgB",
+    "sources": [
+        "style.scss",
+        "utils/_mixins.scss",
+        "utils/_placeholders.scss",
+        "utils/_variables.scss",
+        "components/_buttons.scss",
+        "pages/_home.scss",
+        "pages/_menus.scss",
+        "layout/_header.scss",
+        "layout/_main.scss",
+        "layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
