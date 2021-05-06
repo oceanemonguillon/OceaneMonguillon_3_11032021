@@ -1,1 +1,9 @@
-/**mixin = @mixin nom    permet de ne pas lister les noms des selecteurs cote a cote, mais de faire des blocs differents pour chacun d'entre eux*/
+@mixin box($flex-direction, $justify-content, $align-content, $align-items) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-content: $align-content;
+    align-items: $align-items;
+    width: 100%;
+    height: auto;  
+}

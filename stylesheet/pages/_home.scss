@@ -1,0 +1,18 @@
+
+img{
+    width: 80%;
+    height: auto;
+}
+
+.localisation{
+    background-color: $grey;
+    color: darken($grey, 70%);
+    @include box (row, center, center, center);
+    p{
+        margin-left: 2%;
+    }
+}
+
+.accroche{
+    background-color: lighten($grey, 5%);
+}

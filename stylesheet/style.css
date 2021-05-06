@@ -1,7 +1,99 @@
-/**mixin = @mixin nom    permet de ne pas lister les noms des selecteurs cote a cote, mais de faire des blocs differents pour chacun d'entre eux*/
-/**placeholder = %nom    permet de lister les noms des selecteurs cote a cote car ils ont le meme css**/
 /** POLICES **/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-/** COULEURS **/
+/** HEADER **/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 2px 2px 5px grey;
+          box-shadow: 2px 2px 5px grey;
+  position: relative;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 5%;
+}
+
+header i {
+  font-size: 1em;
+}
+
+header .logo {
+  width: 50%;
+  height: auto;
+}
+
+/** MAIN **/
+body {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0%;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+img {
+  width: 80%;
+  height: auto;
+}
+
+.localisation {
+  background-color: #eaeaea;
+  color: #383838;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.localisation p {
+  margin-left: 2%;
+}
+
+.accroche {
+  background-color: #f7f7f7;
+}
 /*# sourceMappingURL=style.css.map */

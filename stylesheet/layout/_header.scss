@@ -1,0 +1,23 @@
+/** HEADER **/
+header{
+    @include box(row, center, center, center);
+    box-shadow: 2px 2px 5px grey;
+    position: relative;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    a{
+        text-decoration: none;
+        color: black;
+        position: absolute;
+        left: 5%;
+    }
+    
+    i{
+        font-size: 1em;
+    }
+
+    .logo{
+        width: 50%;
+        height: auto; 
+    }
+}
