@@ -1,0 +1,11 @@
+/** BOUTON **/
+.btn{
+    font-family: $police_texte;
+    padding: 3%;
+    color: white;
+    border: 0px;
+    border-radius: 50px;
+    background: linear-gradient($secondary, $primary);    
+    margin-bottom: 10%;
+    @include box-shadow(10%);
+}

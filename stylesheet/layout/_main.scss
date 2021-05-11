@@ -1,19 +1,30 @@
 /** MAIN **/
 body{
     width: 100%;
-    margin: 0%;
+    margin:0%;
     padding: 0%;
+    background-color: white;
 }
 
 h1{
-    font-family: $police_titres_logo;
-    font-size: 2em;
-    text-align: center;
-    margin-top: 0%;
+    display: none;
 }
 
 p{
     font-family: $police_texte;
     font-style: normal;
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+span{
+    font-family: $police_texte;
+    font-weight: bold;
+    font-size: 1.3em;
+    width: 90%;
 }
 

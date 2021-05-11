@@ -1,9 +1,13 @@
-@mixin box($flex-direction, $justify-content, $align-content, $align-items) {
+@mixin box($flex-direction, $justify-content, $align-content, $align-items, $width:100%, $height: auto) {
     display: flex;
     flex-direction: $flex-direction;
     justify-content: $justify-content;
     align-content: $align-content;
     align-items: $align-items;
-    width: 100%;
-    height: auto;  
+    width: $width;
+    height: $height;  
+}
+
+@mixin box-shadow($assombrissement){
+    box-shadow: 5px 5px 10px darken($grey, $assombrissement);
 }

@@ -1,9 +1,4 @@
-
-img{
-    width: 80%;
-    height: auto;
-}
-
+/** LOCALISATION **/
 .localisation{
     background-color: $grey;
     color: darken($grey, 70%);
@@ -13,6 +8,115 @@ img{
     }
 }
 
+/** ACCROCHE **/
 .accroche{
     background-color: lighten($grey, 5%);
+    text-align: center;
+    font-family: $police_texte;
+    padding-top: 7%;
+    
+    &--titre{
+        font-weight: bold;
+        font-size: 1.6em;
+        margin-left: 11%;
+        margin-right: 11%;
+    }
+
+    &--slogan{
+        font-size: 1.1em;
+        margin: 5%;
+    }
 }
+
+/** FONCTIONNEMENT **/
+.fonctionnement{
+    @include box(column, space-around, center, center);
+    padding-top: 10%;
+    ol{
+        list-style-type: none;
+        padding-left: 0%;
+        width: 85%;
+        li{
+            @include box(row, left,center,center);
+            @include box-shadow (5%);
+            background-color: lighten($grey, 5%);
+            border-radius: 15px;
+            margin-bottom: 5%;
+            font-weight: bold;
+            .numero{
+                position: relative;
+                right: 10px;
+                vertical-align: middle;
+                background-color: $primary;
+                width: 20px;
+                height: 20px;
+                border-radius: 100px;    
+                text-align: center;
+                color: white;
+                font-weight: 100;
+                margin-right: 5%;
+            }
+
+            .fas{
+                width: 5%;
+                margin-right: 5%;
+                color: darken($grey,40%);
+                &__coloré{
+                    color:$primary;
+                }
+            }
+        }
+
+    }
+}
+
+/** RESTAURANTS **/
+
+.restaurants{
+    @include box(column, space-around, center, center);
+    background-color: $grey;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+    &__carte{
+        @include box(column, center, center,center,90%,15em);
+        @include box-shadow(10%);
+        margin-top: 10%;
+        background-color: #F2F2F2;
+        border-radius: 1em;
+        position: relative; 
+        a{
+            @include box (column, center, center, center,100%,100%)
+        }
+
+        img
+        {
+            object-fit: cover;
+            width: 100%;
+            height: 90%;
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;     
+        }
+
+        div{
+            @include box(row, space-between, center, center, 90%, 25%);
+            i{
+                font-size: 1.5em;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .new_menu {
+        position: absolute;
+        right: 4%;
+        top: 0%;
+        background-color: $tertiary;
+        color: darken($tertiary, 50%);
+        padding: 2%;
+        border-radius: 3px;
+        }
+}
+
+
+

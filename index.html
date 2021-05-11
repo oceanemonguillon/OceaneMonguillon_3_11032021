@@ -10,6 +10,7 @@
 
 <body>
     <header>
+        <h1>ohmyfood</h1>
         <img class="logo" src="images/logo/ohmyfood.png" alt="logo du site: ohmyfood en noir"/>
     </header>
 
@@ -20,82 +21,94 @@
         </section>
 
         <section class="accroche">
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            <input class="btn" type="button" value="Explorer nos restaurants">
+            <div class="accroche--titre">Réservez le menu qui vous convient</div>
+            <div class="accroche--slogan">Découvrez des restaurants d'exception, séléctionnés par nos soins.</div>
+            <button class="btn" type="button">Explorer nos restaurants</button>
         </section>
 
-        <section>
-            <h2>Fonctionnement</h2>
+        <section class="fonctionnement">
+            <span>Fonctionnement</span>
 
             <ol>
                <li>
-                    <i class="fas fa-mobile-alt"></i>
-                    <p>Choisissez un restaurant</p>
+                   <p class="numero">1</p>
+                   <i class="fas fa-mobile-alt"></i>
+                   <p>Choisissez un restaurant</p>
                 </li> 
             
                 <li>
-                    <i class="fas fa-list-ul"></i>
-                    <p>Composez votre menu</p>
+                   <p class="numero">2</p>
+                   <i class="fas fa-list-ul"></i>
+                   <p>Composez votre menu</p>
                 </li>
 
                 <li>
-                    <i class="fas fa-store"></i>
-                    <p>Degustez au restaurant</p>
+                   <p class="numero">3</p>
+                   <i class="fas fa-store fas__coloré"></i>
+                   <p>Degustez au restaurant</p>
                 </li>
             </ol>
         </section>
 
-        <section>
-            <h2>Restaurants</h2>
-
-            <div>
+        <section class="restaurants">
+            <span>Restaurants</span>
+            
+            <div class="restaurants__carte">
                 <a href="cartes/la_palette_du_gout.html">
                 <img src="images/restaurants/la_palette_du_gout.jpg" alt="assiette de poisson type gastronomique"/>
-                <p>Nouveau</p>
-                <h3>La palette du goût</h3>
-                <p>Ménilmontant</p>
-                <i class="far fa-heart"></i>
+                <p class="new_menu">Nouveau</p>
+                <div>
+                    <p><strong>La palette du goût</strong></br>
+                    Ménilmontant</p>
+                    <i class="far fa-heart"></i>
+                </div>
+
                 </a>
             </div>
 
-            <div>
+            <div class="restaurants__carte">
                 <a href="cartes/la_note_enchantee.html">
                 <img src="images/restaurants/la_note_enchantée.jpg" alt="assiette plat en sauce"/>
-                <p>Nouveau</p>
-                <h3>La note enchantée</h3>
-                <p>Charonne</p>
-                <i class="far fa-heart"></i>
+                <p class="new_menu">Nouveau</p>
+                <div>
+                    <p><strong>La note enchantée</strong></br>
+                    Charonne</p>
+                    <i class="far fa-heart"></i>
+                </div>
                 </a>
             </div>
 
-            <div>
+            <div class="restaurants__carte">
                 <a href="cartes/a_la_francaise.html">
                 <img src="images/restaurants/a_la_francaise.jpg" alt="assiette tartine gastronomique"/>
-                <h3>À la française</h3>
-                <p>Cité Rouge</p>
-                <i class="far fa-heart"></i>
+                <div>
+                    <p><strong>À la française</strong></br>
+                    Cité Rouge</p>
+                    <i class="far fa-heart"></i>
+                </div>
                 </a>
             </div>
 
-            <div>
+            <div class="restaurants__carte">
                 <a href="cartes/le_delice_des_sens.html">
                 <img src="images/restaurants/le_delice_des_sens.jpg" alt="assiette longue poisson en sauce"/>
-                <h3>Le délice des sens</h3>
-                <p>Folie-Méricourt</p>
-                <i class="far fa-heart"></i>
+                <div>
+                    <p><strong>Le délice des sens</strong></br>
+                    Folie-Méricourt</p>
+                    <i class="far fa-heart"></i>
+                </div>
                 </a>
             </div>
         </section>
     </main>
 
     <footer>
-        <h1>ohmyfood</h1>
+        <span class="titre">ohmyfood</span>
         <ul>
             <li><a href="#"> <i class="fas fa-utensils"></i> Proposer un restaurant </a></li>
             <li><a href="#"> <i class="fas fa-hands-helping"></i> Devenir partenaire </a></li>
             <li><a href="#">Mentions légales</a></li>
-            <li><a href="#"> Contact </a></li>
+            <li><a href="mailto:ohmyfood@miam.com"> Contact </a></li>
         </ul>
     </footer>
 </body>
