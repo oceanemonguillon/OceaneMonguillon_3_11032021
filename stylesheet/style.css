@@ -12,6 +12,7 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   margin-bottom: 10%;
+  width: 50%;
   -webkit-box-shadow: 5px 5px 10px #d1d1d1;
           box-shadow: 5px 5px 10px #d1d1d1;
 }
@@ -40,6 +41,7 @@ header {
   position: relative;
   padding-top: 3%;
   padding-bottom: 3%;
+  background-color: white;
 }
 
 header a {
@@ -67,7 +69,27 @@ body {
 }
 
 h1 {
+  font-family: "Shrikhand", cursive;
+  width: 90%;
+}
+
+h1 i {
+  float: right;
+  margin-right: 5%;
+}
+
+.h1_invisible {
   display: none;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 1em;
+  padding-bottom: 1%;
+  margin-left: 2.5%;
+  border-bottom: 3px solid #99E2D0;
+  width: 11%;
 }
 
 p {
@@ -79,6 +101,7 @@ p {
 a {
   text-decoration: none;
   color: black;
+  font-family: "Roboto";
 }
 
 span {
@@ -86,50 +109,6 @@ span {
   font-weight: bold;
   font-size: 1.3em;
   width: 90%;
-}
-
-/** FOOTER **/
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
-  background-color: #383838;
-  color: white;
-  padding-top: 5%;
-}
-
-footer .titre {
-  font-family: "Shrikhand", cursive;
-  font-size: 1em;
-}
-
-footer ul {
-  list-style-type: none;
-  padding-left: 0%;
-  margin-top: 1%;
-  width: 90%;
-}
-
-footer ul a {
-  text-decoration: none;
-  color: white;
-}
-
-footer ul li {
-  margin-top: 3%;
 }
 
 /** LOCALISATION **/
@@ -328,6 +307,8 @@ footer ul li {
 .restaurants__carte img {
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: 50% 65%;
+     object-position: 50% 65%;
   width: 100%;
   height: 90%;
   border-top-left-radius: 1em;
@@ -367,5 +348,152 @@ footer ul li {
   color: #1b6150;
   padding: 2%;
   border-radius: 3px;
+}
+
+/**------- PAGES CARTE -----------**/
+/** IMAGES **/
+.img-menu {
+  width: 100%;
+  height: 15em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/** MENU **/
+.page-menu {
+  background-color: #eaeaea;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #eaeaea;
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  position: relative;
+  bottom: 50px;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5%;
+}
+
+article h2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  height: auto;
+  -webkit-box-shadow: 5px 5px 10px #d1d1d1;
+          box-shadow: 5px 5px 10px #d1d1d1;
+  border-radius: 15px;
+  background-color: white;
+  margin-bottom: 5%;
+}
+
+article div p {
+  margin: 4%;
+  font-size: 0.9em;
+}
+
+article div p strong {
+  font-size: 1.1em;
+}
+
+article div p:nth-child(2) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+/** FOOTER **/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #383838;
+  color: white;
+  padding-top: 5%;
+}
+
+footer .titre {
+  font-family: "Shrikhand", cursive;
+  font-size: 1em;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0%;
+  margin-top: 1%;
+  width: 90%;
+}
+
+footer ul a {
+  text-decoration: none;
+  color: white;
+}
+
+footer ul li {
+  margin-top: 3%;
 }
 /*# sourceMappingURL=style.css.map */

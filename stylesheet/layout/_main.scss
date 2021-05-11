@@ -7,7 +7,26 @@ body{
 }
 
 h1{
+    font-family: $police_titres_logo; 
+    width: 90%; 
+    i{
+        float: right;
+        margin-right: 5%;
+    }
+}
+
+.h1_invisible{
     display: none;
+} 
+
+h2{
+    font-family: $police_texte;
+    font-weight: normal;
+    font-size: 1em;
+    padding-bottom: 1%;
+    margin-left: 2.5%;
+    border-bottom: 3px solid $tertiary;
+    width: 11%;
 }
 
 p{
@@ -19,6 +38,7 @@ p{
 a{
     text-decoration: none;
     color: black;
+    font-family: $police_texte;
 }
 
 span{
