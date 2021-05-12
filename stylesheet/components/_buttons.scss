@@ -9,4 +9,43 @@
     margin-bottom: 10%;
     width: 50%;
     @include box-shadow(10%);
+    opacity: 1;
+    transition: all 400ms;
+    &:hover {
+        opacity: 0.8;
+        @include box-shadow(50%);
+    }
 }
+
+.fa-heart{
+    font-size: 1.2em;
+    position: relative;
+    color: black;
+    transition: color 1000ms;
+    i{
+        background: linear-gradient($primary, $secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        visibility: hidden;
+        transform: scale(0);
+        transform-origin: top left;
+        transition: transform 700ms;
+    }
+
+    &:active{
+        color: rgba(255, 255, 255, 0);
+        i{
+            background: linear-gradient($primary, $secondary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            visibility: visible;
+            font-size: 1em;
+            transform: scale(1);
+        }
+    }
+}
+     
+    

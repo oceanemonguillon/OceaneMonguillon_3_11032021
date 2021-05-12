@@ -101,10 +101,6 @@
 
         div{
             @include box(row, space-between, center, center, 90%, 25%);
-            i{
-                font-size: 1.5em;
-                font-weight: normal;
-            }
         }
     }
 
