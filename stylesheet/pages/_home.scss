@@ -73,10 +73,11 @@
 /** RESTAURANTS **/
 
 .restaurants{
-    @include box(column, space-around, center, center);
+    @include box(column, space-around, center, center,100%,100%);
     background-color: $grey;
     padding-top: 10%;
     padding-bottom: 10%;
+    margin-bottom: 0%;
 
     &__carte{
         @include box(column, center, center,center,90%,15em);

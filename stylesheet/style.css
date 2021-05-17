@@ -122,6 +122,7 @@ body {
 h1 {
   font-family: "Shrikhand", cursive;
   width: 90%;
+  font-size: 1.5em;
 }
 
 h1 i {
@@ -134,6 +135,13 @@ h1 i {
 }
 
 h2 {
+  font-family: "Roboto";
+  font-size: 1.3em;
+  font-weight: bold;
+  width: 90%;
+}
+
+.h2_menu {
   font-family: "Roboto";
   font-weight: normal;
   font-size: 1em;
@@ -153,13 +161,6 @@ a {
   text-decoration: none;
   color: black;
   font-family: "Roboto";
-}
-
-span {
-  font-family: "Roboto";
-  font-weight: bold;
-  font-size: 1.3em;
-  width: 90%;
 }
 
 /** LOCALISATION **/
@@ -303,10 +304,11 @@ span {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: auto;
+  height: 100%;
   background-color: #eaeaea;
   padding-top: 10%;
   padding-bottom: 10%;
+  margin-bottom: 0%;
 }
 
 .restaurants__carte {
@@ -435,7 +437,7 @@ span {
   bottom: 50px;
 }
 
-article {
+section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,12 +457,12 @@ article {
   margin-bottom: 5%;
 }
 
-article h2 {
+section .h2_menu {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
 
-article div {
+section .element {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,20 +485,91 @@ article div {
   border-radius: 15px;
   background-color: white;
   margin-bottom: 5%;
+  opacity: 0;
+  -webkit-animation: apparition 1000ms forwards;
+          animation: apparition 1000ms forwards;
 }
 
-article div p {
+section .element--1 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+section .element--2 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+section .element--3 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+section .element--4 {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+section .element--5 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+section .element--6 {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+section .element--7 {
+  -webkit-animation-delay: 1400ms;
+          animation-delay: 1400ms;
+}
+
+section .element--8 {
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
+}
+
+section .element--9 {
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
+}
+
+section .element--10 {
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+}
+
+section .element p {
   margin: 4%;
   font-size: 0.9em;
 }
 
-article div p strong {
+section .element p strong {
   font-size: 1.1em;
 }
 
-article div p:nth-child(2) {
+section .element p:nth-child(2) {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+@-webkit-keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /** FOOTER **/
@@ -520,11 +593,14 @@ footer {
   background-color: #383838;
   color: white;
   padding-top: 5%;
+  margin-top: 0%;
 }
 
 footer .titre {
   font-family: "Shrikhand", cursive;
-  font-size: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+  width: 90%;
 }
 
 footer ul {

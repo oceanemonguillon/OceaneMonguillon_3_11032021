@@ -5,10 +5,13 @@ footer{
     background-color: darken($grey, 70%);
     color: white;
     padding-top: 5%;
+    margin-top: 0%;
 
     .titre{
         font-family: $police_titres_logo;
-        font-size: 1em;
+        font-size: 1.3em;
+        font-weight: bold;
+        width: 90%;
     }
 
     ul{

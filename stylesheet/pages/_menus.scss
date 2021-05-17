@@ -20,20 +20,27 @@
     bottom: 50px;
 }
 
-article{
+section{
     @include box(column, space-around, center, center, 100%, 100%);
     margin-bottom: 5%;
 
-    h2{
+    .h2_menu{
         align-self: flex-start;
     }
 
-    div{
+    .element{
         @include box(row, space-between, center, center, 95%);
         @include box-shadow(10%);
         border-radius: 15px;
         background-color: white;
         margin-bottom: 5%;
+        opacity: 0;
+        animation: apparition 1000ms forwards;
+        @for $i from 1 through 10 {
+            &--#{$i} {
+                animation-delay: 200ms * $i;
+            }
+        }
 
         p{        
             margin: 4%;
@@ -46,5 +53,14 @@ article{
             align-self:flex-end ;
             }
         }
+    }
+}
+
+@keyframes apparition {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
     }
 }
