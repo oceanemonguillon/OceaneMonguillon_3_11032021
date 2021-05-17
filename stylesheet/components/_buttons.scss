@@ -17,6 +17,7 @@
     }
 }
 
+/** EFFET COEUR **/
 .fa-heart{
     font-size: 1.2em;
     position: relative;
@@ -44,6 +45,25 @@
             visibility: visible;
             font-size: 1em;
             transform: scale(1);
+        }
+    }
+
+    @media  screen and (min-width: 1025px){
+        &:active{
+            display: none;
+        }
+
+        &:hover{
+            color: rgba(255, 255, 255, 0);
+            i{
+                background: linear-gradient($primary, $secondary);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                visibility: visible;
+                font-size: 1em;
+                transform: scale(1);
+            }
+
         }
     }
 }

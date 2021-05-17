@@ -29,11 +29,11 @@ section{
     }
 
     .element{
-        @include box(row, space-between, center, center, 95%);
+        @include box(row, space-between, center, center, 90%,4em);
         @include box-shadow(10%);
         border-radius: 15px;
         background-color: white;
-        margin-bottom: 5%;
+        margin-bottom: 4%;
         opacity: 0;
         animation: apparition 1000ms forwards;
         @for $i from 1 through 10 {
@@ -42,17 +42,71 @@ section{
             }
         }
 
-        p{        
-            margin: 4%;
+        p{  
+            width: 90%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin: 2%;
             font-size: 0.9em;
             strong{
                 font-size: 1.1em;
             }
 
             &:nth-child(2){
-            align-self:flex-end ;
+                @include box(row, center , center, flex-end,10%,60%);
+                text-overflow: initial;
             }
         }
+
+        div{
+            width: 0%;
+            height: 100%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background-color: $tertiary;
+            transition: all 0.5s ease;
+            overflow: hidden;
+
+            .coche{
+                color: white;
+                font-size: 2em;
+                position: relative;
+                top: 25%;
+                left: 25%;
+            }
+        }
+
+        &:active{
+            div{
+                width: 25%;
+    
+                .coche{
+                    animation: rotation-circle 1000ms forwards;
+
+                }
+            }
+
+        }
+
+        @media  screen and (min-width: 1025px){
+            &:active{
+                display: none;
+            }
+
+            &:hover{
+                div{
+                    width: 25%;
+        
+                    .coche{
+                        animation: rotation-circle 1000ms forwards;
+    
+                    }
+                }
+    
+            }
+        }
+    
     }
 }
 
@@ -62,5 +116,14 @@ section{
     }
     to {
         opacity:1;
+    }
+}
+
+@keyframes rotation-circle{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
