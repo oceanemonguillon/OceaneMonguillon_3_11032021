@@ -4,6 +4,9 @@
     @include box(row, center,center,center,100%,100%);
     z-index: 2;
     top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     position: fixed;
     background-color: $tertiary;
     animation: loader 2500ms;
@@ -102,6 +105,19 @@
         }
 
     }
+        
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        ol{
+            width: 80%;
+        }
+    }
+
+    @media  screen and (min-width: 1025px){
+        ol{
+            width: 70%;
+        }
+
+    }
 }
 
 /** RESTAURANTS **/
@@ -147,7 +163,19 @@
         color: darken($tertiary, 50%);
         padding: 2%;
         border-radius: 3px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        &__carte{
+            @include box(column, center, center,center,80%,25em);
         }
+    }
+
+    @media  screen and (min-width: 1025px){
+        &__carte{
+            @include box(column, center, center,center,80%,30em);
+        }
+    }
 }
 
 

@@ -27,16 +27,6 @@ h2{
     width: 90%;
 }
 
-.h2_menu{
-    font-family: $police_texte;
-    font-weight: normal;
-    font-size: 1em;
-    padding-bottom: 1%;
-    margin-left: 2.5%;
-    border-bottom: 3px solid $tertiary;
-    width: 11%;
-}
-
 p{
     font-family: $police_texte;
     font-style: normal;
@@ -47,6 +37,15 @@ a{
     text-decoration: none;
     color: black;
     font-family: $police_texte;
+}
+
+@media screen and (min-width: 1025px){
+    .container {
+        width: 1000px;
+        position: relative;
+        margin: 0 auto;
+        min-height: 400px;
+    }
 }
 
 

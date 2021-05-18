@@ -5,11 +5,22 @@
     width: 100%;
     height: 15em;
     object-fit: cover;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        height: 30em;
+    }
+
+    @media  screen and (min-width: 1025px){
+        height: 35em;
+    }
 }
 
 /** MENU **/
 .page-menu{
     background-color: $grey;
+    @media  screen and (min-width: 1025px){
+        background-color: white;
+    }
 }
 .menu{
     @include box(column, space-between, center, center, 100%,100%);
@@ -18,6 +29,9 @@
     border-top-right-radius: 2em;
     position: relative;
     bottom: 50px;
+    @media  screen and (min-width: 1025px){
+        margin-bottom: -5%;
+    }
 }
 
 section{
@@ -26,6 +40,13 @@ section{
 
     .h2_menu{
         align-self: flex-start;
+        font-family: $police_texte;
+        font-weight: normal;
+        font-size: 1em;
+        padding-bottom: 1%;
+        margin-left: 2.5%;
+        border-bottom: 3px solid $tertiary;
+        width: 45px;
     }
 
     .element{
@@ -89,14 +110,24 @@ section{
 
         }
 
+        @media screen and (min-width: 768px) and (max-width: 1024px){
+            @include box(row, space-between, center, center, 85%,4em);
+            &:active{
+                div{
+                    width: 20%;
+                }
+            }
+        }
         @media  screen and (min-width: 1025px){
+            @include box(row, space-between, center, center, 80%,4em);
+
             &:active{
                 display: none;
             }
 
             &:hover{
                 div{
-                    width: 25%;
+                    width: 15%;
         
                     .coche{
                         animation: rotation-circle 1000ms forwards;
