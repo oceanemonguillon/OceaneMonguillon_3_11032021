@@ -112,7 +112,7 @@
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   margin-bottom: 10%;
-  width: 55%;
+  width: 50%;
   -webkit-box-shadow: 5px 5px 10px #d1d1d1;
           box-shadow: 5px 5px 10px #d1d1d1;
   opacity: 1;
@@ -652,6 +652,9 @@ a {
     width: 80%;
     height: 25em;
   }
+  .restaurants__carte p {
+    font-size: 1.2em;
+  }
 }
 
 @media screen and (min-width: 1025px) {
@@ -673,6 +676,9 @@ a {
             align-items: center;
     width: 80%;
     height: 30em;
+  }
+  .restaurants__carte p {
+    font-size: 1.3em;
   }
 }
 
