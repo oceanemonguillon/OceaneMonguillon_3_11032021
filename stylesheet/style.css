@@ -278,7 +278,7 @@ h1 i {
   margin-right: 5%;
 }
 
-.h1_invisible {
+.titre_invisible {
   display: none;
 }
 
@@ -855,41 +855,43 @@ section .element--10 {
           animation-delay: 2000ms;
 }
 
-section .element p {
-  width: 90%;
+section .element h3 {
+  font-family: "Roboto";
+  font-size: 0.9em;
+  width: 100%;
+  margin-bottom: -15px;
+  margin-top: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  margin: 2%;
+}
+
+section .element p {
   font-size: 0.9em;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-section .element p strong {
-  font-size: 1.1em;
+section .element__prix {
+  padding-top: 5%;
+  text-align: end;
+  width: 15%;
+  padding-right: 10px;
 }
 
-section .element p:nth-child(2) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  width: 10%;
-  height: 60%;
-  text-overflow: initial;
+section .element__texte {
+  height: 90%;
+  width: 100%;
+  margin: 2%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-section .element div {
+section .element .animation_coche {
   width: 0%;
   height: 100%;
   border-top-right-radius: 15px;
@@ -900,7 +902,7 @@ section .element div {
   overflow: hidden;
 }
 
-section .element div .coche {
+section .element .animation_coche .coche {
   color: white;
   font-size: 2em;
   position: relative;
@@ -908,11 +910,11 @@ section .element div .coche {
   left: 25%;
 }
 
-section .element:active div {
-  width: 25%;
+section .element:active .animation_coche {
+  width: 30%;
 }
 
-section .element:active div .coche {
+section .element:active .animation_coche .coche {
   -webkit-animation: rotation-circle 1000ms forwards;
           animation: rotation-circle 1000ms forwards;
 }
@@ -937,7 +939,7 @@ section .element:active div .coche {
     width: 85%;
     height: 4em;
   }
-  section .element:active div {
+  section .element:active .animation_coche {
     width: 20%;
   }
 }
@@ -965,10 +967,10 @@ section .element:active div .coche {
   section .element:active {
     display: none;
   }
-  section .element:hover div {
+  section .element:hover .animation_coche {
     width: 15%;
   }
-  section .element:hover div .coche {
+  section .element:hover .animation_coche .coche {
     -webkit-animation: rotation-circle 1000ms forwards;
             animation: rotation-circle 1000ms forwards;
   }
