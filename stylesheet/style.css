@@ -170,11 +170,11 @@
   transition: transform 700ms, -webkit-transform 700ms;
 }
 
-.fa-heart:active {
+.fa-heart:hover {
   color: rgba(255, 255, 255, 0);
 }
 
-.fa-heart:active i {
+.fa-heart:hover i {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -183,25 +183,6 @@
   font-size: 1em;
   -webkit-transform: scale(1);
           transform: scale(1);
-}
-
-@media screen and (min-width: 1025px) {
-  .fa-heart:active {
-    display: none;
-  }
-  .fa-heart:hover {
-    color: rgba(255, 255, 255, 0);
-  }
-  .fa-heart:hover i {
-    background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-    background: linear-gradient(#9356DC, #FF79DA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    visibility: visible;
-    font-size: 1em;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
 }
 
 /** HEADER **/
@@ -910,11 +891,11 @@ section .element .animation_coche .coche {
   left: 25%;
 }
 
-section .element:active .animation_coche {
+section .element:hover .animation_coche {
   width: 30%;
 }
 
-section .element:active .animation_coche .coche {
+section .element:hover .animation_coche .coche {
   -webkit-animation: rotation-circle 1000ms forwards;
           animation: rotation-circle 1000ms forwards;
 }
@@ -939,7 +920,7 @@ section .element:active .animation_coche .coche {
     width: 85%;
     height: 4em;
   }
-  section .element:active .animation_coche {
+  section .element:hover .animation_coche {
     width: 20%;
   }
 }
@@ -964,15 +945,8 @@ section .element:active .animation_coche .coche {
     width: 80%;
     height: 4em;
   }
-  section .element:active {
-    display: none;
-  }
   section .element:hover .animation_coche {
     width: 15%;
-  }
-  section .element:hover .animation_coche .coche {
-    -webkit-animation: rotation-circle 1000ms forwards;
-            animation: rotation-circle 1000ms forwards;
   }
 }
 
